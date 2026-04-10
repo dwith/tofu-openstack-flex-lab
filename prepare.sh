@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [ ! -d genestack ]; then 
-    git clone --recurse-submodules -j4 git@github.com:cblument/genestack.git
+if [ ! -d genestack ]; then
+    git clone --recurse-submodules -j4 git@github.com:rackerlabs/genestack.git
 fi
 pushd genestack
 if ! git ls-remote --exit-code upstream >/dev/null 2>&1; then
